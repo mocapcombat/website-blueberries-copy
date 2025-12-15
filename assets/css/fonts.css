@@ -1,0 +1,30 @@
+/* Load fonts */
+@font-face {
+  font-family: "Helvetica";
+  font-weight: normal;
+  font-style: normal;
+  font-display: auto;
+  src: url("../fonts/HelveticaNeueMedium.woff") format("woff"),
+       url("../fonts/HelveticaNeueMedium.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "Italic";
+  font-weight: normal;
+  font-style: normal;
+  font-display: auto;
+  src: url("../fonts/HelveticaNeueMediumItalic.woff") format("woff"),
+       url("../fonts/HelveticaNeueMediumItalic.woff2") format("woff2");
+}
+
+/* Apply default font to all text */
+body {
+  font-family: "Helvetica", sans-serif;
+  font-size: larger;
+}
+
+/* Use italic font only when specified */
+.italic {
+  font-family: "Italic", serif; /* fallback in case the font fails to load */
+  font-style: normal; /* optional, since the font itself is already italic style */
+}

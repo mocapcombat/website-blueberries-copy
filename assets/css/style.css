@@ -1,0 +1,36 @@
+/* Main four-column grid layout */
+.grid-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr; /* four equal columns */
+    gap: 0px; /* spacing between columns */
+    padding: 20px;
+}
+
+/* General styling for normal columns */
+.column {
+    background-color: #ffffff; /* optional visual aid */
+    position: sticky;
+    padding: 5px;
+}
+
+/* Images column (third/right column) */
+.images-column {
+    display: flex;
+    flex-direction: column; /* stack images vertically */
+    gap: 10px; /* spacing between images */
+}
+
+/* Set image width to 5 cm, height proportional */
+.images-column img {
+    width: 80%;
+    height: auto;
+}
+
+h1 {
+    position: sticky;
+    top: 0;                 /* if you want it flush to the very top */
+    background-color: #ffffff;
+    margin: 0;              /* remove default margin causing gap */
+    padding: 5px;        /* adjust as you like */
+    z-index: 100;           /* ensure it sits above images */
+}
